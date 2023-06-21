@@ -1,4 +1,4 @@
-/****\*\***** Back-end ******\*\*\*******/
+/\***\*\*\*\*\*** Back-end **\*\***\*\*\***\*\***/
 Sanity-Content Platform (Backend)
 SCSS and Flex
 Frame Emotion
@@ -14,3 +14,6 @@ sanity help - to explore the CLI manual
 
 /_ Front-end _/
 npx create-react-app frontend_react
+
+rafce - shortcut for creating functional component
+(ES7 snippet component)
