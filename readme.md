@@ -17,3 +17,6 @@ npx create-react-app frontend_react
 
 rafce - shortcut for creating functional component
 (ES7 snippet component)
+
+external libraries mostly for styling and animations
+npm install @sanity/client @sanity/image-url framer-motion node-sass react-icons
