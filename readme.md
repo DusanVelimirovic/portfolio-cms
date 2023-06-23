@@ -12,6 +12,8 @@ sanity docs - to open the documentation in a browser
 sanity manage - to open the project settings in a browser
 sanity help - to explore the CLI manual
 
+sanity manage - open Sanity Manage Dashboard (use to connect with React App)
+
 /_ Front-end _/
 npx create-react-app frontend_react
 
