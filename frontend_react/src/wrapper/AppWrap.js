@@ -8,8 +8,10 @@ const AppWrap = (Component, idName, classNames) =>
   function HOC() {
     return (
       <div id={idName} className={`app__container ${classNames}`}>
+        {/* Social Media Component*/}
         <SocialMedia />
         <div className="app__wrapper app__flex">
+          {/* Section Components */}
           <Component />
 
           <div className="copyright">
