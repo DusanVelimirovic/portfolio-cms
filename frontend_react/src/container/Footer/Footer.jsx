@@ -17,6 +17,7 @@ const Footer = () => {
   // Comming from State
   const { username, email, message } = formData;
 
+  // Keep track on every input change
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -26,6 +27,7 @@ const Footer = () => {
   const handleSubmit = () => {
     setLoading(true);
 
+    // Contact object used to send data to Sanity Backend
     const contact = {
       _type: 'contact',
       name: formData.username,
@@ -33,8 +35,10 @@ const Footer = () => {
       message: formData.message,
     };
 
+    // Upload data to Sanity Backend
     client.create(contact)
       .then(() => {
+        // If request was successuful
         setLoading(false);
         setIsFormSubmitted(true);
       })
@@ -43,16 +47,16 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text">Take a coffee & chat with me if you want to have this Project</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:hello@micael.com" className="p-text">hello@micael.com</a>
+          <a href="mailto:dusan.velimirovic@yahoo.com" className="p-text">dusan.velimirovic@yahoo.com</a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a>
+          <a href="tel:+381601349282" className="p-text">+381601349282</a>
         </div>
       </div>
       {/* Contact Form */}
